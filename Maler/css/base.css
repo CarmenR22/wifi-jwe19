@@ -1,7 +1,7 @@
 :root {
   --screen-max: 1200px;
   --base-font: "Montserrat", sans-serif;
-  --base-font2: "Pridi", "Times New Roman";
+  --base-font2: "Pridi", serif;
   --footer-link-color: #fff;
   --grey-dark: #525252;
   --white: white;
@@ -46,6 +46,28 @@ html, body {
   font-weight: bold;
 }
 
+@media screen and (min-width: 576px) {
+  footer .footer-top {
+    display: flex;
+  }
+  footer .footer-left,
+  footer .footer-right {
+    flex: 1;
+  }
+  footer .footer-right {
+    text-align: right;
+  }
+
+}
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
+}
+
+}
 body {
   font-family: var(--base-font);
   font-size: 100%;
@@ -115,20 +137,6 @@ footer ul {
   padding: 0;
 }
 
-footer .footer-top {
-  font-family: var(--base-font2);
-  font-weight: lighter;
-  display: flex;
-}
-
-footer .footer-left {
-  flex: 1;
-}
-
-footer .footer-right {
-  flex: 1;
-  text-align: right;
-}
 
 footer .footer-bottom {
 }
@@ -148,4 +156,6 @@ footer a:visited {
 footer {
   background: var(--grey-dark);
   color: #696969;
+  font-family: var(--base-font2);
+  font-weight: lighter;
 }
