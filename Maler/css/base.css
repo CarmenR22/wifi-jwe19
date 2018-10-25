@@ -1,5 +1,11 @@
 :root {
   --screen-max: 1200px;
+  --base-font: "Montserrat", sans-serif;
+  --base-font2: "Pridi", "Times New Roman";
+  --footer-link-color: #fff;
+  --grey-dark: #525252;
+  --white: white;
+
 }
 
 html, body {
@@ -22,9 +28,31 @@ html, body {
   font-weight: lighter;
 }
 
+@font-face {
+  font-family: "Pridi";
+  src: url(../Fonts/Pridi/Pridi-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Pridi";
+  src: url(../Fonts/Pridi/Pridi-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Pridi";
+  src: url(../Fonts/Pridi/Pridi-Bold.ttf.ttf);
+  font-weight: bold;
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--base-font);
   font-size: 100%;
+  background: orange;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
 }
 
 html * {
@@ -47,29 +75,77 @@ header img {
   display: block;
 }
 
-header .inner-wrapper {
+nav ul {
+  list-style: none;
+}
+
+header .inner-wrapper,
+footer .inner-wrapper {
   position: relative;
-  max-width: var(screen-max);
+  max-width: var(--screen-max);
   margin: 0 auto;
-  background: red;
 }
 
 header h1 {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: green;
   width: 100%;
-  font-weight: normal;
+  font-family: var(--base-font2);
+  font-weight: lighter;
+  text-transform: uppercase;
 }
 
 main {
   background: lightgrey;
+  flex: 1;
 
 }
 
+h2 {
+  font-family: var(--base-font2);
+  font-weight: lighter;
+  color: var(--white);
+  text-transform: uppercase;
+}
 
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer-top {
+  font-family: var(--base-font2);
+  font-weight: lighter;
+  display: flex;
+}
+
+footer .footer-left {
+  flex: 1;
+}
+
+footer .footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+footer .footer-bottom {
+}
+
+footer a:link {
+  color: lightgrey;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer a:visited {
+  color: var(--footer-link-color);
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
 footer {
-  background: #333;
+  background: var(--grey-dark);
+  color: #696969;
 }
