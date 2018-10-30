@@ -1,0 +1,44 @@
+section.content-element {
+  display: block;
+  position: relative;
+}
+
+.content-element .teaser {
+  position: relative;
+
+  background:
+  -webkit-linear-gradient(rgba(255,125,0,0.5), rgba(255,125,0,0.5)),
+  url(../img/huebsches_Bild1.jpg);
+
+  background:
+  linear-gradient(rgba(255,125,0,0.5), rgba(255,125,0,0.5)),
+  url(../img/huebsches_Bild1.jpg);
+
+  background-size: cover;
+  height: 35vw;
+}
+
+
+.content-element .teaser p {
+  position: relative;
+  z-index: 10;
+}
+
+.content-element .button {
+  padding: 5px;
+  background-color: rgb(255,125,0);
+  width: 100px;
+  text-align: center;
+}
+
+section a:link{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 576px){
+  .content-element .teaser p {
+    padding-right: 45%
+  }
+}

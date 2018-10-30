@@ -60,7 +60,6 @@ html, body {
 
 }
 @media screen and (min-width: 768px) {
-
 }
 @media screen and (min-width: 992px) {
 }
@@ -75,6 +74,23 @@ body {
   display: flex;
   flex-flow: column;
   min-height: 100vh;
+}
+
+body .bildgroese {
+  width: 100%;
+  height: 30vw;
+  overflow: hidden;
+  position: relative;
+
+}
+body .orange {
+  display: block;
+  color: orange;
+  opacity: 50%;
+  z-index: 50;
+  width: 100%;
+  height: 30vw;
+  object-fit: cover;
 }
 
 html * {
@@ -98,6 +114,7 @@ html * {
   background-color: var(--grey-dark);
   text-indent: -9999em;
   overflow: hidden;
+  padding-top: 25px;
 }
 #logo-part2 {
   position: absolute;
@@ -118,9 +135,11 @@ html * {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--grey-dark);
+  padding-left: 1em;
+  padding-top: 0.2em;
 }
 
-header {
+header#main-header{
   width: 100%;
   height: 45vw;
   background: lightgreen;
@@ -128,26 +147,29 @@ header {
   position: relative;
 }
 
-header img {
+header#main-header img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   display: block;
 }
+nav .main-navigation {
 
+}
 nav ul {
   list-style: none;
 }
 
-header .inner-wrapper,
+header#main-header .inner-wrapper,
+.content-element .inner-wrapper,
 footer .inner-wrapper {
   position: relative;
   max-width: var(--screen-max);
   margin: 0 auto;
 }
 
-header h1 {
+header#main-header h1 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -161,6 +183,14 @@ main {
   background: lightgrey;
   flex: 1;
 
+}
+
+p {
+  font-family: var(--base-font);
+}
+
+a {
+  font-family: var(--base-font);
 }
 
 h2 {
