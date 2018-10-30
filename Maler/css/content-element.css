@@ -24,21 +24,41 @@ section.content-element {
   z-index: 10;
 }
 
-.content-element .button {
-  padding: 5px;
-  background-color: rgb(255,125,0);
+
+.content-element a.button {
+  padding: 1em 1em;
+  background: orange;
+  color: white;
   width: 100px;
-  text-align: center;
+  display: inline-block;
+
+}
+
+.content-element a.button:hover {
+  opacity: 0.6;
 }
 
 section a:link{
   color: white;
+  background-color: orange;
+  padding: 1em 1em;
+  display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
 }
 
+.content-element .content-text img {
+  display: block;
+  margin: 1em 0;
+  height: 10%;
+
+}
+
 @media screen and (min-width: 576px){
   .content-element .teaser p {
+    padding-right: 45%
+  }
+  .content-element .content-text p {
     padding-right: 45%
   }
 }
