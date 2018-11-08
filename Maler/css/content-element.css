@@ -6,13 +6,7 @@ section.content-element {
 .content-element .teaser {
   position: relative;
 
-  background:
-  -webkit-linear-gradient(rgba(255,125,0,0.5), rgba(255,125,0,0.5)),
-  url(../img/huebsches_Bild1.jpg);
 
-  background:
-  linear-gradient(rgba(255,125,0,0.5), rgba(255,125,0,0.5)),
-  url(../img/huebsches_Bild1.jpg);
 
   background-size: cover;
   height: 35vw;
