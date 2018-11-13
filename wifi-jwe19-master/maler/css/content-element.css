@@ -1,3 +1,7 @@
+html * {
+  box-sizing: border-box;
+}
+
 section.content-element {
   display: block;
   position: relative;
@@ -41,7 +45,7 @@ section.content-element {
   margin: 1em 0;
 }
 
-.content-element a.button {
+.content-element a.button, input.button {
   display: inline-block;
   padding: 1em 2em;
   background: orange;
@@ -99,4 +103,42 @@ section.content-element {
     max-height: 40rem;
   }
 
+}
+form {
+  background-color: var(--grey-dark);
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+label {
+  width: 25%;
+  padding: 10px;
+  float: left;
+}
+
+input, textarea {
+  font-family: var(--base-font);
+  padding: 10px;
+  border: none;
+  width: 50%;
+  position: relative;
+  display: block;
+}
+
+input[type=button] {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.clearfix {
+  clear: both;
 }

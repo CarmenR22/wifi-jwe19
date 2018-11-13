@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Formular</title>
+</head>
+
+<body>
+  <form class="form1" action="form.html" method="post">
+    <p>
+      <label for="female">
+        Frau
+      </label>
+      <input type="radio" name="gender" id="female" value="female">
+
+      <label for="male">
+        Herr
+      </label>
+      <input type="radio" name="gender" id="male" value="male">
+    </p>
+    <p>
+      <label for="firstname">Vorname</label>
+      <input type="text" name="firstname" id="firstname" value="" placeholder="Vorname">
+    </p>
+    <p>
+      <label for="lastname">Nachname</label>
+      <input type="text" name="lastname" id="lastname" value="" placeholder="Nachname">
+    </p>
+    <p>
+      <label for="email">E-Mail</label>
+      <input type="email" name="email" id="email" value="" placeholder="E-Mail">
+    </p>
+    <p>
+    <label for="date">Datum</label>
+    <input type="date" name="date" value="Datum">
+    </p>
+    <p>
+      <label for="password">Passwort</label>
+      <input type="password" name="password" id="password" value="">
+    </p>
+    <p>
+      <label for="numbers">Nummer</label>
+      <input type="number" name="numbers" id="numbers" value="" min="2" max="22" step="2">
+    </p>
+    <p>
+      <label for="Auswahl">Auswahl</label>
+      <select class="Auswahl" name="Auswahl" multiple>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </p>
+    <p>
+      <label for="Auswahl">Auswahl</label>
+      <select class="Auswahl" name="Auswahl">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </p>
+    <p>
+      <label for="textarea">Textfeld</label>
+      <textarea name="textarea" rows="8" cols="80"></textarea>
+    </p>
+    <p>
+      <label for="checkbox">Check</label>
+      <input type="checkbox" name="Check" id="check" value="ok" required>
+    </p>
+    <p>
+      <input type="submit" name="submit" id="submit" value="Jetzt absenden!">
+      <button type="button" name="button">Absenden?</button>
+      <input type="reset" name="reset" value="Zurücksetzen">
+    </p>
+   </form>
+ </body>
+ </html>
