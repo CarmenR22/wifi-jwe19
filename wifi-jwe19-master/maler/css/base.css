@@ -135,7 +135,7 @@ header#main-header img {
 
 header#main-header .inner-wrapper,
 .content-element .inner-wrapper,
-section .inner-wrapper,
+form .inner-wrapper,
 footer .inner-wrapper {
   position: relative;
   max-width: var(--screen-max);
